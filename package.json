@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/Dante-dan/nuxt-inlineScripts#readme",
   "devDependencies": {
+    "@nuxt/kit": "^3.12.4",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^27.5.2",
