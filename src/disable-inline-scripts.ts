@@ -35,8 +35,8 @@ function extractInlineScript(
 }
 
 export default defineNitroPlugin(async nitroApp => {
-  // @ts-ignore
   nitroApp.hooks.hook(
+    // @ts-ignore
     'render:html',
     (html: {
       head: string[];
