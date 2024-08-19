@@ -13,38 +13,45 @@
 ## Install
 
 ```bash
-npm install my-package-name
+npm install nuxt-inline-scripts -S
+
+# pnpm
+pnpm add nuxt-inline-scripts -S
 ```
 
 ## Usage
 
 ```ts
-import { myPackage } from 'my-package-name';
 
-myPackage('hello');
-//=> 'hello from my package'
+// nuxt.config.ts
+{
+    inlineScripts: {
+        disable: true,
+        // where inline scripts generate 
+        // output: '.output/public/_nuxt',
+        // cdn url
+        // cdnURL: string,
+    },
+    modules: ['nuxt-inline-scripts']
+}
+
 ```
 
 ## API
 
-### myPackage(input, options?)
+### inlineScripts
 
-#### input
+#### disable
 
-Type: `string`
+Type: `boolean`
 
-Lorem ipsum.
+#### output
 
-#### options
+Type:  `string`
 
-Type: `object`
-
-##### postfix
+#### cdnURL
 
 Type: `string`
-Default: `rainbows`
-
-Lorem ipsum.
 
 [build-img]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml
