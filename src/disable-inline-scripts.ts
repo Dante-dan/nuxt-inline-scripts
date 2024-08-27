@@ -26,8 +26,8 @@ function extractInlineScript(
     const path = cdnURL.endsWith('/')
       ? `${cdnURL}${filename}`
       : `${cdnURL}/${filename}`;
-    if (procss?.dev || process?.env?.NODE_ENV === 'development') {
-      // Be consistent with the production environment
+    if (process?.dev || process?.env?.NODE_ENV === 'development') {
+      // keep development environment consistent with the production environment
       filePath = join('.nuxt/dev/public', filename);
     }
     if (!existsSync(filePath)) {
