@@ -20,6 +20,6 @@ export default defineNuxtModule({
       return;
     }
     const resolver = createResolver(import.meta.url);
-    addServerPlugin(resolver.resolve('./disable-inline-scripts.ts'));
+    addServerPlugin(resolver.resolve('./disable-inline-scripts'));
   },
 });
