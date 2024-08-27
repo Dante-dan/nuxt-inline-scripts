@@ -1,4 +1,4 @@
-# my-package-name
+# nuxt-inline-scripts
 
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
