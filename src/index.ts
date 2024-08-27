@@ -1,6 +1,8 @@
 import { defineNuxtModule, addServerPlugin, createResolver } from '@nuxt/kit';
 import { INLINE_SCRIPTS_DEFAULT_OPTIONS } from './constant';
 import type { NuxtModule } from '@nuxt/schema';
+import { writeFileSync } from 'fs';
+
 export default defineNuxtModule({
   meta: {
     name: 'nuxt-inline-scripts',
@@ -21,5 +23,7 @@ export default defineNuxtModule({
     }
     const resolver = createResolver(import.meta.url);
     addServerPlugin(resolver.resolve('./disable-inline-scripts'));
+    // extract config
+    writeFileSync('config.json', JSON.stringify(options));
   },
 }) satisfies NuxtModule<typeof INLINE_SCRIPTS_DEFAULT_OPTIONS>;

@@ -1,8 +1,7 @@
-import { writeFileSync, existsSync, mkdirSync } from 'fs';
+import { writeFileSync, existsSync, mkdirSync, readFileSync } from 'fs';
 import { createHash } from 'crypto';
 import { defineNitroPlugin } from 'nitropack/dist/runtime/plugin';
 import { join, dirname } from 'path';
-import { useNuxt } from '@nuxt/kit';
 import { INLINE_SCRIPTS_DEFAULT_OPTIONS } from './constant';
 
 // generate a short hash by content
@@ -52,7 +51,7 @@ export default defineNitroPlugin(async nitroApp => {
       bodyPrepend: string[];
       bodyAppend: string[];
     }) => {
-      const { options: nuxtOptions } = useNuxt();
+      const nuxtOptions = JSON.parse(readFileSync('config.json', 'utf-8'));
       // @ts-ignore
       const { inlineScripts } = nuxtOptions;
       const options = { ...INLINE_SCRIPTS_DEFAULT_OPTIONS, ...inlineScripts };

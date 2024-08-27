@@ -1,6 +1,6 @@
 {
   "name": "nuxt-inline-scripts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Enable/Disable inlineScripts for Nuxt3",
   "main": "./lib/index.js",
   "files": [
