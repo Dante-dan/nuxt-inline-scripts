@@ -1,7 +1,7 @@
-import { writeFileSync, existsSync } from 'fs';
+import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { createHash } from 'crypto';
 import { defineNitroPlugin } from 'nitropack/dist/runtime/plugin';
-import { join } from 'path';
+import { join, dirname } from 'path';
 import { useNuxt } from '@nuxt/kit';
 import { INLINE_SCRIPTS_DEFAULT_OPTIONS } from './constant';
 
@@ -22,11 +22,19 @@ function extractInlineScript(
     }
     const hash = generateHash(scriptContent);
     const filename = `inline-script-${hash}.js`;
-    const filePath = join(output, filename);
+    let filePath = join(output, filename);
     const path = cdnURL.endsWith('/')
       ? `${cdnURL}${filename}`
       : `${cdnURL}/${filename}`;
+    if (procss?.dev || process?.env?.NODE_ENV === 'development') {
+      // Be consistent with the production environment
+      filePath = join('.nuxt/dev/public', filename);
+    }
     if (!existsSync(filePath)) {
+      // if no directory, create it
+      if (!existsSync(dirname(filePath))) {
+        mkdirSync(dirname(filePath), { recursive: true });
+      }
       writeFileSync(filePath, scriptContent);
     }
     html = html.replace(script, `<script src="${path}"></script>`);
