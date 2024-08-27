@@ -1,6 +1,6 @@
 {
   "name": "nuxt-inline-scripts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Enable/Disable inlineScripts for Nuxt3",
   "main": "./lib/index.js",
   "files": [
@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/Dante-dan/nuxt-inlineScripts#readme",
   "devDependencies": {
-    "@nuxt/kit": "^3.12.4",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^29.5.12",
@@ -48,12 +47,15 @@
     "husky": "^6.0.0",
     "jest": "^29.7.0",
     "lint-staged": "^13.2.1",
-    "nitropack": "^2.9.7",
     "prettier": "^2.2.1",
     "semantic-release": "^21.0.1",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0",
+    "nitropack": "^2.0.0"
   },
   "config": {
     "commitizen": {
