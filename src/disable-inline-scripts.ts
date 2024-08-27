@@ -26,8 +26,8 @@ function extractInlineScript(
       ? `${cdnURL}${filename}`
       : `${cdnURL}/${filename}`;
     if (process?.dev || process?.env?.NODE_ENV === 'development') {
-      // keep development environment consistent with the production environment
-      filePath = join('.nuxt/dev/public', filename);
+      // dev mode skip
+      return html;
     }
     if (!existsSync(filePath)) {
       // if no directory, create it
