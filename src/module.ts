@@ -37,11 +37,11 @@ export default defineNuxtModule<typeof INLINE_SCRIPTS_DEFAULT_OPTIONS>({
         ...combineOptions,
       };
     });
-    _nuxt.hook('vite:extendConfig', (viteInlineConfig: any) => {
-      viteInlineConfig.optimizeDeps ||= {};
-      viteInlineConfig.optimizeDeps.include ||= [];
-      viteInlineConfig.optimizeDeps.include.push('nuxt-inline-scripts');
-    });
+    // _nuxt.hook('vite:extendConfig', (viteInlineConfig: any) => {
+    //   viteInlineConfig.optimizeDeps ||= {};
+    //   viteInlineConfig.optimizeDeps.include ||= [];
+    //   viteInlineConfig.optimizeDeps.include.push('nuxt-inline-scripts');
+    // });
     addServerHandler({
       route: `${INTERNAL_PREFIX}/*`,
       handler: resolver.resolve('./runtime/server/inline-scripts.get'),
