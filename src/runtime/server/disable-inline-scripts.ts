@@ -2,7 +2,6 @@ import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { hash } from 'ohash';
 import { defineNitroPlugin } from 'nitropack/dist/runtime/plugin';
 import { join, dirname } from 'pathe';
-import { useRuntimeConfig } from '#imports';
 import {
   INLINE_SCRIPTS_DEFAULT_OPTIONS,
   INTERNAL_PREFIX,

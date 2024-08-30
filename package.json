@@ -1,6 +1,6 @@
 {
   "name": "nuxt-inline-scripts",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Enable/Disable inlineScripts for Nuxt3",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -44,6 +44,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.0.0",
     "defu": "^6.1.4",
+    "h3": "^1.0.0",
     "nitropack": "^2.0.0",
     "ohash": "^1.0.0",
     "pathe": "^1.0.0"
@@ -54,19 +55,19 @@
     "@nuxt/module-builder": "^0.8.3",
     "@nuxt/schema": "^3.13.0",
     "@nuxt/test-utils": "^3.14.1",
-    "@types/node": "^22.5.0",
-    "changelogen": "^0.5.5",
-    "eslint": "^9.9.1",
-    "nuxt": "^3.0.0",
-    "prettier": "^3.3.3",
-    "typescript": "latest",
-    "vitest": "^2.0.5",
-    "vue-tsc": "^2.0.29",
-    "conventional-changelog-conventionalcommits": "^5.0.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@types/node": "^22.5.0",
+    "changelogen": "^0.5.5",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^9.9.1",
+    "husky": "^6.0.0",
+    "nuxt": "^3.0.0",
+    "prettier": "^3.3.3",
     "semantic-release": "^21.0.1",
-    "husky": "^6.0.0"
+    "typescript": "latest",
+    "vitest": "^2.0.5",
+    "vue-tsc": "^2.0.29"
   },
   "config": {
     "commitizen": {

@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'pathe';
 import { INLINE_SCRIPTS_DEFAULT_OPTIONS, INTERNAL_PREFIX } from '../constant';
-
+import { defineEventHandler } from 'h3';
 export default defineEventHandler(async event => {
   const filename = event.node.req.url
     .toString()

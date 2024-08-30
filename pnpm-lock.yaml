@@ -14,6 +14,9 @@ importers:
       defu:
         specifier: ^6.1.4
         version: 6.1.4
+      h3:
+        specifier: ^1.0.0
+        version: 1.12.0
       nitropack:
         specifier: ^2.0.0
         version: 2.9.7(magicast@0.3.5)
