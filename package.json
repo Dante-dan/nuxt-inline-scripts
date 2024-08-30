@@ -1,6 +1,6 @@
 {
   "name": "nuxt-inline-scripts",
-  "version": "1.0.11",
+  "version": "1.0.10",
   "description": "Enable/Disable inlineScripts for Nuxt3",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "prepare": "nuxi prepare",
-    "prepack": "nuxi prepare && nuxt-module-build build",
+    "build": "nuxi prepare && nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
