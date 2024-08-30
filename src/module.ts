@@ -21,6 +21,10 @@ export default defineNuxtModule<typeof INLINE_SCRIPTS_DEFAULT_OPTIONS>({
     if (!_options?.disable) {
       return;
     }
+    // @ts-ignore
+    if (process.dev || process.env.NODE_ENV === 'development') {
+      return;
+    }
     const ssr = _nuxt?.options?.ssr ?? true;
     if (ssr) {
       console.error(

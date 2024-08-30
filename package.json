@@ -1,6 +1,6 @@
 {
   "name": "nuxt-inline-scripts",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Enable/Disable inlineScripts for Nuxt3",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
