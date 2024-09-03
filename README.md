@@ -42,13 +42,6 @@ pnpm add nuxt-inline-scripts -S
 
 Type: `boolean`
 
-#### output
-
-Type:  `string`
-
-#### cdnURL
-
-Type: `string`
 
 [build-img]:https://github.com/Dante-dan/nuxt-inlineScripts/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/Dante-dan/nuxt-inlineScripts/actions/workflows/release.yml
