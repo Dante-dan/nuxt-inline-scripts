@@ -28,10 +28,6 @@ pnpm add nuxt-inline-scripts -S
     // @ts-ignore
     inlineScripts: {
         disable: true,
-        // // where inline scripts generate 
-        // output: '.output/public/_nuxt',
-        // // cdn url
-        // cdnURL: string,
     },
     modules: ['nuxt-inline-scripts']
 }
