@@ -43,16 +43,16 @@ pnpm add nuxt-inline-scripts -S
 Type: `boolean`
 
 
-[build-img]:https://github.com/Dante-dan/nuxt-inlineScripts/actions/workflows/release.yml/badge.svg
-[build-url]:https://github.com/Dante-dan/nuxt-inlineScripts/actions/workflows/release.yml
+[build-img]:https://github.com/Dante-dan/nuxt-inline-scripts/actions/workflows/release.yml/badge.svg
+[build-url]:https://github.com/Dante-dan/nuxt-inline-scripts/actions/workflows/release.yml
 [downloads-img]:https://img.shields.io/npm/dt/nuxt-inline-scripts
 [downloads-url]:https://www.npmtrends.com/nuxt-inline-scripts
 [npm-img]:https://img.shields.io/npm/v/nuxt-inline-scripts
 [npm-url]:https://www.npmjs.com/package/nuxt-inline-scripts
-[issues-img]:https://img.shields.io/github/issues/Dante-dan/nuxt-inlineScripts
-[issues-url]:https://github.com/Dante-dan/nuxt-inlineScripts/issues
-[codecov-img]:https://codecov.io/gh/Dante-dan/nuxt-inlineScripts/branch/main/graph/badge.svg
-[codecov-url]:https://codecov.io/gh/Dante-dan/nuxt-inlineScripts
+[issues-img]:https://img.shields.io/github/issues/Dante-dan/nuxt-inline-scripts
+[issues-url]:https://github.com/Dante-dan/nuxt-inline-scripts/issues
+[codecov-img]:https://codecov.io/gh/Dante-dan/nuxt-inline-scripts/branch/main/graph/badge.svg
+[codecov-url]:https://codecov.io/gh/Dante-dan/nuxt-inline-scripts
 [semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]:https://github.com/semantic-release/semantic-release
 [commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
