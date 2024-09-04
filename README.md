@@ -1,5 +1,5 @@
 <picture>
- <img alt="nuxt-inline-scripts" src="./logo.svg">
+ <img alt="nuxt-inline-scripts" src="./logo.png">
 </picture>
 
 # nuxt-inline-scripts
