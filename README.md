@@ -1,3 +1,6 @@
+<picture>
+ <img alt="nuxt-inline-scripts" src="./logo.svg">
+</picture>
 # nuxt-inline-scripts
 
 [![npm package][npm-img]][npm-url]
